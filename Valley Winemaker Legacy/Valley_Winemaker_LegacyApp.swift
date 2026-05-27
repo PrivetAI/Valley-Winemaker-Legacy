@@ -19,7 +19,8 @@ struct Valley_Winemaker_LegacyApp: App {
                 if let ready = valleyLinkReady {
                     if ready {
                         ValleyWinemakerWebPanel(urlString: valleySourceLink)
-                            .edgesIgnoringSafeArea(.all)
+                            .edgesIgnoringSafeArea(.bottom)
+                            .background(Color.black.ignoresSafeArea())
                             .preferredColorScheme(.light)
                     } else {
                         ContentView()

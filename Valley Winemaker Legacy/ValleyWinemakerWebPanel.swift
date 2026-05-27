@@ -13,7 +13,7 @@ struct ValleyWinemakerWebPanel: UIViewRepresentable {
         // draw content under the notch.
         webView.scrollView.contentInsetAdjustmentBehavior = .always
         webView.isOpaque = true
-        webView.backgroundColor = .white
+        webView.backgroundColor = .black
         if let url = URL(string: urlString) {
             webView.load(URLRequest(url: url))
         }
